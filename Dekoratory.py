@@ -1,33 +1,3 @@
-# def zwykłaFunkcja():
-#     print("To jest zwykła funkcja")
-#
-# def dekor(funkcja):
-#     def wew():
-#         print("Dekorujemy funkcję")
-#         return funkcja()
-#
-#     return wew
-#
-#
-# nowaFunkcja = dekor(zwykłaFunkcja)
-# nowaFunkcja()
-
-
-# def dekor(funkcja):
-#
-#     def wew():
-#         print("Dekorujemy funkcję")
-#         return funkcja()
-#
-#     return wew
-#
-# @dekor
-# def zwykłaFunkcja():
-#     print("To jest zwykła funkcja")
-#
-#
-# zwykłaFunkcja()
-
 def dekor(funkcja):
     def wew(*args, **kwargs):
         print("Dekorujemy funkcję dodajac kolejny parametr")
