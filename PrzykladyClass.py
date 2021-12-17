@@ -1,13 +1,13 @@
 # Tworzenie klasy
 class String:
-    # Zwykly konstruktor
+    # Konstruktor
     def __init__(self, string):
         self.string = string
     # Print nasz obiekt
     def __repr__(self):
         return 'Object: {}'.format(self.string)
     # Add, mozemy dzieki tej funkcji tak jakby
-    #obslugiwac 'dodanie' do naszego obiektu
+    #obslugiwac 'dodanie' str do naszego obiektu
     def __add__(self, other):
         return self.string + other
 
@@ -19,3 +19,5 @@ if __name__ == '__main__':
     print(string1)
     # Polacz obiekt stringa z stringiem
     print(string1 + ' world')
+
+#https://www.geeksforgeeks.org/customize-your-python-class-with-magic-or-dunder-methods/
