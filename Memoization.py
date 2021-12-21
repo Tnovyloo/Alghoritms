@@ -25,3 +25,6 @@ def factorial(input_value):
 
 for i in range(1, 100):
     print(f"{i}! = ", factorial(i))
+
+
+#https://towardsdatascience.com/mastering-memoization-in-python-dcdd8b435189
