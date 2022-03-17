@@ -1,3 +1,5 @@
+import random
+
 def mergesort(array):
     if len(array) > 1:
         #Szukamy środka listy
@@ -43,6 +45,9 @@ def printList(array):
         print(array[i], end=" ")
     print()
 
+def random_list(list_len):
+    func_list = [random.randint(0,1000) for i in range(list_len)]
+    return func_list
 
 # Driver Code
 if __name__ == '__main__':
@@ -52,3 +57,4 @@ if __name__ == '__main__':
     mergesort(arr)
     print("Sorted array is: ", end="\n")
     printList(arr)
+    # print(lambda x: random.randint(0,1000) for x in range(100))
