@@ -4,20 +4,15 @@ def mergesort(array):
     if len(array) > 1:
         #Szukamy środka listy
         mid = len(array) // 2
-
         #Dzielimy liste
         L = array[:mid]
-
         #Na dwie części
         R = array[mid:]
-
         #Sortujemy pierwszą część
         mergesort(L)
         #Sortujemy drugą część
         mergesort(R)
-
         i = j = k = 0
-
         #Kopiuj wartości do temp. list
         while i < len(L) and j < len(R):
             if L[i] < R[j]:

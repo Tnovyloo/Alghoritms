@@ -12,7 +12,6 @@ def factorial_memo(input_value):
 print(factorial_memo(5))
 
 ##Drugi sposób
-
 from functools import lru_cache
 
 @lru_cache(maxsize=1000)
@@ -21,7 +20,6 @@ def factorial(input_value):
         return 1
     elif input_value >= 2:
         return input_value * factorial(input_value - 1)
-
 
 for i in range(1, 100):
     print(f"{i}! = ", factorial(i))
